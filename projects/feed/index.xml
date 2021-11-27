@@ -9,8 +9,8 @@
 
 <channel>
 	<title>Projects &#8211; The Making Rooms</title>
-	<atom:link href="/projects/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../../index.html</link>
 	<description>Where creativity, technology and advanced manufacturing come together</description>
 	<lastBuildDate>Tue, 28 Jan 2020 15:13:56 +0000</lastBuildDate>
 	<language>en-GB</language>
@@ -21,19 +21,19 @@
 	
 
 <image>
-	<url>/wp-content/uploads/2016/08/cropped-favicon-32x32.gif</url>
+	<url>./../../wp-content/uploads/2016/08/cropped-favicon-32x32.gif</url>
 	<title>Projects &#8211; The Making Rooms</title>
-	<link>/</link>
+	<link>./../../index.html</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>Etching a Wooden Spoon</title>
-		<link>/projects/etching-a-wooden-spoon/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=etching-a-wooden-spoon</link>
+		<link>./../etching-a-wooden-spoon/index.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=etching-a-wooden-spoon</link>
 		
 		<dc:creator><![CDATA[waseema sarah]]></dc:creator>
 		<pubDate>Fri, 12 Apr 2019 11:12:00 +0000</pubDate>
-				<guid isPermaLink="false">/?p=2273</guid>
+				<guid isPermaLink="false">./../../index.html?p=2273</guid>
 
 					<description><![CDATA[]]></description>
 										<content:encoded><![CDATA[]]></content:encoded>
@@ -43,11 +43,11 @@
 			</item>
 		<item>
 		<title>Library Signage</title>
-		<link>/projects/library-signage/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=library-signage</link>
+		<link>./../library-signage/index.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=library-signage</link>
 		
 		<dc:creator><![CDATA[J Jacob]]></dc:creator>
 		<pubDate>Tue, 02 Jan 2018 18:01:38 +0000</pubDate>
-				<guid isPermaLink="false">/?p=1256</guid>
+				<guid isPermaLink="false">./../../index.html?p=1256</guid>
 
 					<description><![CDATA[]]></description>
 										<content:encoded><![CDATA[]]></content:encoded>
@@ -57,11 +57,11 @@
 			</item>
 		<item>
 		<title>Wooden Slot Together Models</title>
-		<link>/projects/wooden-slot-together-models/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=wooden-slot-together-models</link>
+		<link>./../wooden-slot-together-models/index.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=wooden-slot-together-models</link>
 		
 		<dc:creator><![CDATA[J Jacob]]></dc:creator>
 		<pubDate>Thu, 31 Aug 2017 12:02:23 +0000</pubDate>
-				<guid isPermaLink="false">/?p=1126</guid>
+				<guid isPermaLink="false">./../../index.html?p=1126</guid>
 
 					<description><![CDATA[]]></description>
 										<content:encoded><![CDATA[]]></content:encoded>
@@ -71,11 +71,11 @@
 			</item>
 		<item>
 		<title>Door Signs for The Making Rooms&#8217; Studios</title>
-		<link>/projects/signage-for-the-making-rooms/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=signage-for-the-making-rooms</link>
+		<link>./../signage-for-the-making-rooms/index.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=signage-for-the-making-rooms</link>
 		
 		<dc:creator><![CDATA[J Jacob]]></dc:creator>
 		<pubDate>Wed, 30 Aug 2017 16:12:04 +0000</pubDate>
-				<guid isPermaLink="false">/?p=1114</guid>
+				<guid isPermaLink="false">./../../index.html?p=1114</guid>
 
 					<description><![CDATA[]]></description>
 										<content:encoded><![CDATA[]]></content:encoded>
@@ -85,11 +85,11 @@
 			</item>
 		<item>
 		<title>Dymaxion Globe</title>
-		<link>/projects/dymaxion-globe/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=dymaxion-globe</link>
+		<link>./../dymaxion-globe/index.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=dymaxion-globe</link>
 		
 		<dc:creator><![CDATA[J Jacob]]></dc:creator>
 		<pubDate>Wed, 30 Aug 2017 12:19:23 +0000</pubDate>
-				<guid isPermaLink="false">/?p=1098</guid>
+				<guid isPermaLink="false">./../../index.html?p=1098</guid>
 
 					<description><![CDATA[]]></description>
 										<content:encoded><![CDATA[]]></content:encoded>

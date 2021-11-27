@@ -9,8 +9,8 @@
 
 <channel>
 	<title>News &#8211; The Making Rooms</title>
-	<atom:link href="/news/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../../index.html</link>
 	<description>Where creativity, technology and advanced manufacturing come together</description>
 	<lastBuildDate>Fri, 02 Apr 2021 09:20:36 +0000</lastBuildDate>
 	<language>en-GB</language>
@@ -21,19 +21,19 @@
 	
 
 <image>
-	<url>/wp-content/uploads/2016/08/cropped-favicon-32x32.gif</url>
+	<url>./../../wp-content/uploads/2016/08/cropped-favicon-32x32.gif</url>
 	<title>News &#8211; The Making Rooms</title>
-	<link>/</link>
+	<link>./../../index.html</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>The Making Rooms to receive £41,512 from second round of the Government’s Culture Recovery Fund</title>
-		<link>/news/the-making-rooms-to-receive-41512-from-second-round-of-the-governments-culture-recovery-fund/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=the-making-rooms-to-receive-41512-from-second-round-of-the-governments-culture-recovery-fund</link>
+		<link>./../the-making-rooms-to-receive-41512-from-second-round-of-the-governments-culture-recovery-fund/index.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=the-making-rooms-to-receive-41512-from-second-round-of-the-governments-culture-recovery-fund</link>
 		
 		<dc:creator><![CDATA[Tom Macpherson-Pope]]></dc:creator>
 		<pubDate>Fri, 02 Apr 2021 09:20:36 +0000</pubDate>
-				<guid isPermaLink="false">/?post_type=news&#038;p=2744</guid>
+				<guid isPermaLink="false">./../../index.html?post_type=news&#038;p=2744</guid>
 
 					<description><![CDATA[]]></description>
 										<content:encoded><![CDATA[]]></content:encoded>
@@ -43,11 +43,11 @@
 			</item>
 		<item>
 		<title>COVID-19 Update</title>
-		<link>/news/covid-19-update/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=covid-19-update</link>
+		<link>./../covid-19-update/index.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=covid-19-update</link>
 		
 		<dc:creator><![CDATA[Eddie Kirkby]]></dc:creator>
 		<pubDate>Mon, 29 Jun 2020 11:27:46 +0000</pubDate>
-				<guid isPermaLink="false">/?post_type=news&#038;p=2507</guid>
+				<guid isPermaLink="false">./../../index.html?post_type=news&#038;p=2507</guid>
 
 					<description><![CDATA[]]></description>
 										<content:encoded><![CDATA[]]></content:encoded>
@@ -57,11 +57,11 @@
 			</item>
 		<item>
 		<title>Changes to Fab Lab Blackburn Open Access Days</title>
-		<link>/news/changes-to-fab-lab-blackburn-open-access-days/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=changes-to-fab-lab-blackburn-open-access-days</link>
+		<link>./../changes-to-fab-lab-blackburn-open-access-days/index.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=changes-to-fab-lab-blackburn-open-access-days</link>
 		
 		<dc:creator><![CDATA[J Jacob]]></dc:creator>
 		<pubDate>Sat, 21 Sep 2019 11:33:23 +0000</pubDate>
-				<guid isPermaLink="false">/?post_type=news&#038;p=2437</guid>
+				<guid isPermaLink="false">./../../index.html?post_type=news&#038;p=2437</guid>
 
 					<description><![CDATA[]]></description>
 										<content:encoded><![CDATA[]]></content:encoded>
@@ -71,11 +71,11 @@
 			</item>
 		<item>
 		<title>The Making Rooms Interview</title>
-		<link>/news/the-making-rooms-interview/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=the-making-rooms-interview</link>
+		<link>./../the-making-rooms-interview/index.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=the-making-rooms-interview</link>
 		
 		<dc:creator><![CDATA[Tom Macpherson-Pope]]></dc:creator>
 		<pubDate>Mon, 30 Apr 2018 15:28:12 +0000</pubDate>
-				<guid isPermaLink="false">/?post_type=news&#038;p=1434</guid>
+				<guid isPermaLink="false">./../../index.html?post_type=news&#038;p=1434</guid>
 
 					<description><![CDATA[]]></description>
 										<content:encoded><![CDATA[]]></content:encoded>
@@ -85,11 +85,11 @@
 			</item>
 		<item>
 		<title>R&#038;D Tax Credits</title>
-		<link>/news/r-and-d-tax-credits/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=r-and-d-tax-credits</link>
+		<link>./../r-and-d-tax-credits/index.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=r-and-d-tax-credits</link>
 		
 		<dc:creator><![CDATA[Tom Macpherson-Pope]]></dc:creator>
 		<pubDate>Wed, 18 Apr 2018 12:10:21 +0000</pubDate>
-				<guid isPermaLink="false">/?post_type=news&#038;p=1421</guid>
+				<guid isPermaLink="false">./../../index.html?post_type=news&#038;p=1421</guid>
 
 					<description><![CDATA[]]></description>
 										<content:encoded><![CDATA[]]></content:encoded>
@@ -99,11 +99,11 @@
 			</item>
 		<item>
 		<title>What the coworking?</title>
-		<link>/news/what-the-coworking/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=what-the-coworking</link>
+		<link>./../what-the-coworking/index.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=what-the-coworking</link>
 		
 		<dc:creator><![CDATA[Tom Macpherson-Pope]]></dc:creator>
 		<pubDate>Thu, 05 Apr 2018 15:12:16 +0000</pubDate>
-				<guid isPermaLink="false">/?post_type=news&#038;p=1384</guid>
+				<guid isPermaLink="false">./../../index.html?post_type=news&#038;p=1384</guid>
 
 					<description><![CDATA[]]></description>
 										<content:encoded><![CDATA[]]></content:encoded>

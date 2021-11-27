@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	Comments on: Home	</title>
-	<atom:link href="/home/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../../index.html</link>
 	<description>Where creativity, technology and advanced manufacturing come together</description>
 	<lastBuildDate>Fri, 16 Apr 2021 13:18:54 +0000</lastBuildDate>
 	<sy:updatePeriod>

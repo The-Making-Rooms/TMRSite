@@ -9,8 +9,8 @@
 
 <channel>
 	<title>Equipment &#8211; The Making Rooms</title>
-	<atom:link href="/equipment/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../../index.html</link>
 	<description>Where creativity, technology and advanced manufacturing come together</description>
 	<lastBuildDate>Mon, 05 Jul 2021 14:21:38 +0000</lastBuildDate>
 	<language>en-GB</language>
@@ -21,19 +21,19 @@
 	
 
 <image>
-	<url>/wp-content/uploads/2016/08/cropped-favicon-32x32.gif</url>
+	<url>./../../wp-content/uploads/2016/08/cropped-favicon-32x32.gif</url>
 	<title>Equipment &#8211; The Making Rooms</title>
-	<link>/</link>
+	<link>./../../index.html</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>Rotating Laser Etcher</title>
-		<link>/equipment/rotary-laser-etcher/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=rotary-laser-etcher</link>
+		<link>./../rotary-laser-etcher/index.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=rotary-laser-etcher</link>
 		
 		<dc:creator><![CDATA[J Jacob]]></dc:creator>
 		<pubDate>Tue, 06 Aug 2019 15:28:56 +0000</pubDate>
-				<guid isPermaLink="false">/?post_type=equipment&#038;p=2400</guid>
+				<guid isPermaLink="false">./../../index.html?post_type=equipment&#038;p=2400</guid>
 
 					<description><![CDATA[]]></description>
 										<content:encoded><![CDATA[]]></content:encoded>
@@ -43,11 +43,11 @@
 			</item>
 		<item>
 		<title>Pottery Wheel</title>
-		<link>/equipment/pottery-wheel/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=pottery-wheel</link>
+		<link>./../pottery-wheel/index.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=pottery-wheel</link>
 		
 		<dc:creator><![CDATA[J Jacob]]></dc:creator>
 		<pubDate>Tue, 28 Mar 2017 10:42:02 +0000</pubDate>
-				<guid isPermaLink="false">/?post_type=equipment&#038;p=712</guid>
+				<guid isPermaLink="false">./../../index.html?post_type=equipment&#038;p=712</guid>
 
 					<description><![CDATA[]]></description>
 										<content:encoded><![CDATA[]]></content:encoded>
@@ -57,11 +57,11 @@
 			</item>
 		<item>
 		<title>Kiln</title>
-		<link>/equipment/kiln/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=kiln</link>
+		<link>./../kiln/index.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=kiln</link>
 		
 		<dc:creator><![CDATA[J Jacob]]></dc:creator>
 		<pubDate>Thu, 07 Sep 2017 15:36:25 +0000</pubDate>
-				<guid isPermaLink="false">/?post_type=equipment&#038;p=1161</guid>
+				<guid isPermaLink="false">./../../index.html?post_type=equipment&#038;p=1161</guid>
 
 					<description><![CDATA[]]></description>
 										<content:encoded><![CDATA[]]></content:encoded>
@@ -71,11 +71,11 @@
 			</item>
 		<item>
 		<title>Shopbot CNC Router</title>
-		<link>/equipment/shopbot-cnc-router/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=shopbot-cnc-router</link>
+		<link>./../shopbot-cnc-router/index.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=shopbot-cnc-router</link>
 		
 		<dc:creator><![CDATA[Eddie Kirkby]]></dc:creator>
 		<pubDate>Mon, 13 Feb 2017 11:21:11 +0000</pubDate>
-				<guid isPermaLink="false">/?post_type=equipment&#038;p=653</guid>
+				<guid isPermaLink="false">./../../index.html?post_type=equipment&#038;p=653</guid>
 
 					<description><![CDATA[]]></description>
 										<content:encoded><![CDATA[]]></content:encoded>
@@ -85,11 +85,11 @@
 			</item>
 		<item>
 		<title>Large Laser Cutter</title>
-		<link>/equipment/large-laser-cutter/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=large-laser-cutter</link>
+		<link>./../large-laser-cutter/index.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=large-laser-cutter</link>
 		
 		<dc:creator><![CDATA[Tom Macpherson-Pope]]></dc:creator>
 		<pubDate>Tue, 22 Aug 2017 11:42:18 +0000</pubDate>
-				<guid isPermaLink="false">/?post_type=equipment&#038;p=1078</guid>
+				<guid isPermaLink="false">./../../index.html?post_type=equipment&#038;p=1078</guid>
 
 					<description><![CDATA[]]></description>
 										<content:encoded><![CDATA[]]></content:encoded>
@@ -99,11 +99,11 @@
 			</item>
 		<item>
 		<title>Small Laser Cutter</title>
-		<link>/equipment/small-laser-cutter/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=small-laser-cutter</link>
+		<link>./../small-laser-cutter/index.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=small-laser-cutter</link>
 		
 		<dc:creator><![CDATA[howard.marsden]]></dc:creator>
 		<pubDate>Fri, 24 Jun 2016 15:17:06 +0000</pubDate>
-				<guid isPermaLink="false">/development/?post_type=equipment&#038;p=46</guid>
+				<guid isPermaLink="false">./../../development/index.html?post_type=equipment&#038;p=46</guid>
 
 					<description><![CDATA[]]></description>
 										<content:encoded><![CDATA[]]></content:encoded>
@@ -113,11 +113,11 @@
 			</item>
 		<item>
 		<title>Vinyl Cutter</title>
-		<link>/equipment/vinyl-cutter/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=vinyl-cutter</link>
+		<link>./../vinyl-cutter/index.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=vinyl-cutter</link>
 		
 		<dc:creator><![CDATA[howard.marsden]]></dc:creator>
 		<pubDate>Mon, 18 Jul 2016 10:09:49 +0000</pubDate>
-				<guid isPermaLink="false">/development/?post_type=equipment&#038;p=117</guid>
+				<guid isPermaLink="false">./../../development/index.html?post_type=equipment&#038;p=117</guid>
 
 					<description><![CDATA[]]></description>
 										<content:encoded><![CDATA[]]></content:encoded>
@@ -127,11 +127,11 @@
 			</item>
 		<item>
 		<title>Production 3D Printer &#8211; Industrial</title>
-		<link>/equipment/3d-printer-industrial/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=3d-printer-industrial</link>
+		<link>./../3d-printer-industrial/index.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=3d-printer-industrial</link>
 		
 		<dc:creator><![CDATA[Eddie Kirkby]]></dc:creator>
 		<pubDate>Mon, 13 Feb 2017 11:04:55 +0000</pubDate>
-				<guid isPermaLink="false">/?post_type=equipment&#038;p=651</guid>
+				<guid isPermaLink="false">./../../index.html?post_type=equipment&#038;p=651</guid>
 
 					<description><![CDATA[]]></description>
 										<content:encoded><![CDATA[]]></content:encoded>
@@ -141,11 +141,11 @@
 			</item>
 		<item>
 		<title>3D Printer &#8211; Plastics</title>
-		<link>/equipment/3d-printer/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=3d-printer</link>
+		<link>./../3d-printer/index.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=3d-printer</link>
 		
 		<dc:creator><![CDATA[howard.marsden]]></dc:creator>
 		<pubDate>Mon, 20 Jun 2016 16:01:11 +0000</pubDate>
-				<guid isPermaLink="false">/development/?post_type=equipment&#038;p=5</guid>
+				<guid isPermaLink="false">./../../development/index.html?post_type=equipment&#038;p=5</guid>
 
 					<description><![CDATA[]]></description>
 										<content:encoded><![CDATA[]]></content:encoded>
@@ -155,11 +155,11 @@
 			</item>
 		<item>
 		<title>3D Printer – Resin</title>
-		<link>/equipment/3d-printer-resin/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=3d-printer-resin</link>
+		<link>./../3d-printer-resin/index.html?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=3d-printer-resin</link>
 		
 		<dc:creator><![CDATA[howard.marsden]]></dc:creator>
 		<pubDate>Mon, 18 Jul 2016 10:13:33 +0000</pubDate>
-				<guid isPermaLink="false">/development/?post_type=equipment&#038;p=119</guid>
+				<guid isPermaLink="false">./../../development/index.html?post_type=equipment&#038;p=119</guid>
 
 					<description><![CDATA[]]></description>
 										<content:encoded><![CDATA[]]></content:encoded>
