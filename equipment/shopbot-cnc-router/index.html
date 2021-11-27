@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-GB">
+<![endif]--><!--[if IE 8]>
+<html class="ie ie8" lang="en-GB">
+<![endif]--><!--[if !(IE 7) | !(IE 8) ]><!--><html lang="en-GB">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no ">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>Shopbot CNC Router | The Making Rooms</title>
+<!--[if lt IE 9]>
+
+<script src="https://makingrooms.org/wp-content/themes/themakingrooms/js/html5.js"></script>
+<![endif]-->
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<script type="text/javascript">
+	var siteurl = "https://makingrooms.org/"
+</script>
+<script src="https://use.typekit.net/ktb7uzi.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//s.w.org">
+		<!-- This site uses the Google Analytics by ExactMetrics plugin v7.0.0 - Using Analytics tracking - https://www.exactmetrics.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=UA-145333854-1" type="text/javascript" data-cfasync="false" async></script>
+			<script type="text/javascript" data-cfasync="false">
+				var em_version = '7.0.0';
+				var em_track_user = true;
+				var em_no_track_reason = '';
+				
+								var disableStrs = [
+															'ga-disable-UA-145333854-1',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for ( var index = 0; index < disableStrs.length; index++ ) {
+						if ( document.cookie.indexOf( disableStrs[ index ] + '=true' ) > -1 ) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if ( __gtagTrackerIsOptedOut() ) {
+					for ( var index = 0; index < disableStrs.length; index++ ) {
+						window[ disableStrs[ index ] ] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for ( var index = 0; index < disableStrs.length; index++ ) {
+						document.cookie = disableStrs[ index ] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[ disableStrs[ index ] ] = true;
+					}
+				}
+
+				if ( 'undefined' === typeof gaOptout ) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.ExactMetricsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if ( em_track_user ) {
+					function __gtagDataLayer() {
+						dataLayer.push( arguments );
+					}
+
+					function __gtagTracker( type, name, parameters ) {
+						if ( type === 'event' ) {
+							
+															parameters.send_to = exactmetrics_frontend.ua;
+								__gtagDataLayer.apply( null, arguments );
+													} else {
+							__gtagDataLayer.apply( null, arguments );
+						}
+					}
+					__gtagTracker( 'js', new Date() );
+					__gtagTracker( 'set', {
+						'developer_id.dNDMyYj' : true,
+											} );
+															__gtagTracker( 'config', 'UA-145333854-1', {"forceSSL":"true"} );
+										window.gtag = __gtagTracker;										(
+						function () {
+							/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+							/* ga and __gaTracker compatibility shim. */
+							var noopfn = function () {
+								return null;
+							};
+							var newtracker = function () {
+								return new Tracker();
+							};
+							var Tracker = function () {
+								return null;
+							};
+							var p = Tracker.prototype;
+							p.get = noopfn;
+							p.set = noopfn;
+							p.send = function (){
+								var args = Array.prototype.slice.call(arguments);
+								args.unshift( 'send' );
+								__gaTracker.apply(null, args);
+							};
+							var __gaTracker = function () {
+								var len = arguments.length;
+								if ( len === 0 ) {
+									return;
+								}
+								var f = arguments[len - 1];
+								if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+									if ( 'send' === arguments[0] ) {
+										var hitConverted, hitObject = false, action;
+										if ( 'event' === arguments[1] ) {
+											if ( 'undefined' !== typeof arguments[3] ) {
+												hitObject = {
+													'eventAction': arguments[3],
+													'eventCategory': arguments[2],
+													'eventLabel': arguments[4],
+													'value': arguments[5] ? arguments[5] : 1,
+												}
+											}
+										}
+										if ( 'pageview' === arguments[1] ) {
+											if ( 'undefined' !== typeof arguments[2] ) {
+												hitObject = {
+													'eventAction': 'page_view',
+													'page_path' : arguments[2],
+												}
+											}
+										}
+										if ( typeof arguments[2] === 'object' ) {
+											hitObject = arguments[2];
+										}
+										if ( typeof arguments[5] === 'object' ) {
+											Object.assign( hitObject, arguments[5] );
+										}
+										if ( 'undefined' !== typeof arguments[1].hitType ) {
+											hitObject = arguments[1];
+											if ( 'pageview' === hitObject.hitType ) {
+												hitObject.eventAction = 'page_view';
+											}
+										}
+										if ( hitObject ) {
+											action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+											hitConverted = mapArgs( hitObject );
+											__gtagTracker( 'event', action, hitConverted );
+										}
+									}
+									return;
+								}
+
+								function mapArgs( args ) {
+									var arg, hit = {};
+									var gaMap = {
+										'eventCategory': 'event_category',
+										'eventAction': 'event_action',
+										'eventLabel': 'event_label',
+										'eventValue': 'event_value',
+										'nonInteraction': 'non_interaction',
+										'timingCategory': 'event_category',
+										'timingVar': 'name',
+										'timingValue': 'value',
+										'timingLabel': 'event_label',
+										'page' : 'page_path',
+										'location' : 'page_location',
+										'title' : 'page_title',
+									};
+									for ( arg in args ) {
+																				if ( ! ( ! args.hasOwnProperty(arg) || ! gaMap.hasOwnProperty(arg) ) ) {
+											hit[gaMap[arg]] = args[arg];
+										} else {
+											hit[arg] = args[arg];
+										}
+									}
+									return hit;
+								}
+
+								try {
+									f.hitCallback();
+								} catch ( ex ) {
+								}
+							};
+							__gaTracker.create = newtracker;
+							__gaTracker.getByName = newtracker;
+							__gaTracker.getAll = function () {
+								return [];
+							};
+							__gaTracker.remove = noopfn;
+							__gaTracker.loaded = true;
+							window['__gaTracker'] = __gaTracker;
+						}
+					)();
+									} else {
+										console.log( "" );
+					( function () {
+							function __gtagTracker() {
+								return null;
+							}
+							window['__gtagTracker'] = __gtagTracker;
+							window['gtag'] = __gtagTracker;
+					} )();
+									}
+			</script>
+				<!-- / Google Analytics by ExactMetrics -->
+				<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/makingrooms.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=e7c90b10a44f4fb86fec0d37e182b071"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="semantic-style-css" href="/wp-content/plugins/team-booking/libs/semantic/semantic-fix-min.css?ver=e7c90b10a44f4fb86fec0d37e182b071" type="text/css" media="all">
+<link rel="stylesheet" id="teambooking-style-modal-css" href="/wp-content/plugins/team-booking/libs/remodal/remodal.css?ver=e7c90b10a44f4fb86fec0d37e182b071" type="text/css" media="all">
+<link rel="stylesheet" id="teambooking-style-modal-theme-css" href="/wp-content/plugins/team-booking/libs/remodal/remodal-default-theme.css?ver=e7c90b10a44f4fb86fec0d37e182b071" type="text/css" media="all">
+<link rel="stylesheet" id="teambooking-style-frontend-css" href="/wp-content/themes/themakingrooms/css/tb-frontend.css?ver=e7c90b10a44f4fb86fec0d37e182b071" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=e7c90b10a44f4fb86fec0d37e182b071" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="/wp-includes/css/dashicons.min.css?ver=e7c90b10a44f4fb86fec0d37e182b071" type="text/css" media="all">
+<link rel="stylesheet" id="site-css" href="/wp-content/themes/themakingrooms/css/site.css?ver=e7c90b10a44f4fb86fec0d37e182b071" type="text/css" media="all">
+<link rel="stylesheet" id="acf-global-css" href="/wp-content/plugins/advanced-custom-fields-pro/assets/build/css/acf-global.css?ver=5.10.2" type="text/css" media="all">
+<link rel="stylesheet" id="acf-input-css" href="/wp-content/plugins/advanced-custom-fields-pro/assets/build/css/acf-input.css?ver=5.10.2" type="text/css" media="all">
+<link rel="stylesheet" id="acf-pro-input-css" href="/wp-content/plugins/advanced-custom-fields-pro/assets/build/css/pro/acf-pro-input.css?ver=5.10.2" type="text/css" media="all">
+<link rel="stylesheet" id="select2-css" href="/wp-content/plugins/advanced-custom-fields-pro/assets/inc/select2/4/select2.min.css?ver=4.0" type="text/css" media="all">
+<link rel="stylesheet" id="acf-datepicker-css" href="/wp-content/plugins/advanced-custom-fields-pro/assets/inc/datepicker/jquery-ui.min.css?ver=1.11.4" type="text/css" media="all">
+<link rel="stylesheet" id="acf-timepicker-css" href="/wp-content/plugins/advanced-custom-fields-pro/assets/inc/timepicker/jquery-ui-timepicker-addon.min.css?ver=1.6.1" type="text/css" media="all">
+<link rel="stylesheet" id="wp-color-picker-css" href="/wp-admin/css/color-picker.min.css?ver=e7c90b10a44f4fb86fec0d37e182b071" type="text/css" media="all">
+<link rel="stylesheet" id="um_fonticons_ii-css" href="/wp-content/plugins/ultimate-member/assets/css/um-fonticons-ii.css?ver=2.1.21" type="text/css" media="all">
+<link rel="stylesheet" id="um_fonticons_fa-css" href="/wp-content/plugins/ultimate-member/assets/css/um-fonticons-fa.css?ver=2.1.21" type="text/css" media="all">
+<link rel="stylesheet" id="um_crop-css" href="/wp-content/plugins/ultimate-member/assets/css/um-crop.css?ver=2.1.21" type="text/css" media="all">
+<link rel="stylesheet" id="um_modal-css" href="/wp-content/plugins/ultimate-member/assets/css/um-modal.css?ver=2.1.21" type="text/css" media="all">
+<link rel="stylesheet" id="um_styles-css" href="/wp-content/plugins/ultimate-member/assets/css/um-styles.css?ver=2.1.21" type="text/css" media="all">
+<link rel="stylesheet" id="um_profile-css" href="/wp-content/plugins/ultimate-member/assets/css/um-profile.css?ver=2.1.21" type="text/css" media="all">
+<link rel="stylesheet" id="um_account-css" href="/wp-content/plugins/ultimate-member/assets/css/um-account.css?ver=2.1.21" type="text/css" media="all">
+<link rel="stylesheet" id="um_misc-css" href="/wp-content/plugins/ultimate-member/assets/css/um-misc.css?ver=2.1.21" type="text/css" media="all">
+<link rel="stylesheet" id="um_fileupload-css" href="/wp-content/plugins/ultimate-member/assets/css/um-fileupload.css?ver=2.1.21" type="text/css" media="all">
+<link rel="stylesheet" id="um_datetime-css" href="/wp-content/plugins/ultimate-member/assets/css/pickadate/default.css?ver=2.1.21" type="text/css" media="all">
+<link rel="stylesheet" id="um_datetime_date-css" href="/wp-content/plugins/ultimate-member/assets/css/pickadate/default.date.css?ver=2.1.21" type="text/css" media="all">
+<link rel="stylesheet" id="um_datetime_time-css" href="/wp-content/plugins/ultimate-member/assets/css/pickadate/default.time.css?ver=2.1.21" type="text/css" media="all">
+<link rel="stylesheet" id="um_raty-css" href="/wp-content/plugins/ultimate-member/assets/css/um-raty.css?ver=2.1.21" type="text/css" media="all">
+<link rel="stylesheet" id="um_scrollbar-css" href="/wp-content/plugins/ultimate-member/assets/css/simplebar.css?ver=2.1.21" type="text/css" media="all">
+<link rel="stylesheet" id="um_tipsy-css" href="/wp-content/plugins/ultimate-member/assets/css/um-tipsy.css?ver=2.1.21" type="text/css" media="all">
+<link rel="stylesheet" id="um_responsive-css" href="/wp-content/plugins/ultimate-member/assets/css/um-responsive.css?ver=2.1.21" type="text/css" media="all">
+<link rel="stylesheet" id="um_default_css-css" href="/wp-content/plugins/ultimate-member/assets/css/um-old-default.css?ver=2.1.21" type="text/css" media="all">
+<link rel="stylesheet" id="um_old_css-css" href="/wp-content/plugins/ultimate-member/../../uploads/ultimatemember/um_old_settings.css?ver=e7c90b10a44f4fb86fec0d37e182b071" type="text/css" media="all">
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="exactmetrics-frontend-script-js-extra">
+/* <![CDATA[ */
+var exactmetrics_frontend = {"js_events_tracking":"true","download_extensions":"zip,mp3,mpeg,pdf,docx,pptx,xlsx,rar","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/makingrooms.org","hash_tracking":"false","ua":"UA-145333854-1","v4_id":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/google-analytics-dashboard-for-wp/assets/js/frontend-gtag.min.js?ver=7.0.0" id="exactmetrics-frontend-script-js"></script>
+<script type="text/javascript" src="/wp-content/themes/themakingrooms/js/jquery.cycle2.min.js?ver=e7c90b10a44f4fb86fec0d37e182b071" id="cycle-js"></script>
+<script type="text/javascript" src="/wp-content/themes/themakingrooms/js/jquery.cycle2.carousel.min.js?ver=e7c90b10a44f4fb86fec0d37e182b071" id="carousel-js"></script>
+<script type="text/javascript" src="/wp-content/themes/themakingrooms/js/site.js?ver=e7c90b10a44f4fb86fec0d37e182b071" id="site-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1" id="jquery-ui-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/ui/mouse.min.js?ver=1.12.1" id="jquery-ui-mouse-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/ui/sortable.min.js?ver=1.12.1" id="jquery-ui-sortable-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/ui/resizable.min.js?ver=1.12.1" id="jquery-ui-resizable-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/advanced-custom-fields-pro/assets/build/js/acf.min.js?ver=5.10.2" id="acf-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/advanced-custom-fields-pro/assets/build/js/acf-input.min.js?ver=5.10.2" id="acf-input-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/advanced-custom-fields-pro/assets/build/js/pro/acf-pro-input.min.js?ver=5.10.2" id="acf-pro-input-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.12.1" id="jquery-ui-datepicker-js"></script>
+<script type="text/javascript" id="jquery-ui-datepicker-js-after">
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"dS MM yy","firstDay":1,"isRTL":false});});
+</script>
+<script type="text/javascript" src="/wp-content/plugins/advanced-custom-fields-pro/assets/inc/timepicker/jquery-ui-timepicker-addon.min.js?ver=1.6.1" id="acf-timepicker-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/ui/draggable.min.js?ver=1.12.1" id="jquery-ui-draggable-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/ui/slider.min.js?ver=1.12.1" id="jquery-ui-slider-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.ui.touch-punch.js?ver=0.2.2" id="jquery-touch-punch-js"></script>
+<script type="text/javascript" src="/wp-admin/js/iris.min.js?ver=1.0.7" id="iris-js"></script>
+<script type="text/javascript" src="/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7" id="regenerator-runtime-js"></script>
+<script type="text/javascript" src="/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script type="text/javascript" src="/wp-includes/js/dist/hooks.min.js?ver=a7edae857aab69d69fa10d5aef23a5de" id="wp-hooks-js"></script>
+<script type="text/javascript" src="/wp-includes/js/dist/i18n.min.js?ver=5f1269854226b4dd90450db411a12b79" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text directionltr': [ 'ltr' ] } );
+wp.i18n.setLocaleData( { 'text directionltr': [ 'ltr' ] } );
+</script>
+<script type="text/javascript" id="wp-color-picker-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2021-09-09 10:29:25+0000","generator":"GlotPress\/3.0.0-alpha.2","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"en_GB"},"Color value":["Colour value"],"Select default color":["Select default colour"],"Clear color":["Clear colour"],"Select Color":["Select Colour"],"Clear":["Clear"],"Default":["Default"]}},"comment":{"reference":"wp-admin\/js\/color-picker.js"}} );
+</script>
+<script type="text/javascript" src="/wp-admin/js/color-picker.min.js?ver=e7c90b10a44f4fb86fec0d37e182b071" id="wp-color-picker-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/advanced-custom-fields-pro/assets/inc/color-picker-alpha/wp-color-picker-alpha.js?ver=3.0.0" id="acf-color-picker-alpha-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/ultimate-member/assets/js/um-gdpr.min.js?ver=2.1.21" id="um-gdpr-js"></script>
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml"> 
+
+<link rel="canonical" href="/equipment/shopbot-cnc-router/">
+<link rel="shortlink" href="/?p=653">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fequipment%2Fshopbot-cnc-router%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fequipment%2Fshopbot-cnc-router%2F&#038;format=xml">
+<script type="text/javascript">
+	window._se_plugin_version = '8.1.9';
+</script>
+		<style type="text/css">.um_request_name {
+				display: none !important;
+			}</style>
+	<link rel="icon" href="/wp-content/uploads/2016/08/cropped-favicon-32x32.gif" sizes="32x32">
+<link rel="icon" href="/wp-content/uploads/2016/08/cropped-favicon-192x192.gif" sizes="192x192">
+<link rel="apple-touch-icon" href="/wp-content/uploads/2016/08/cropped-favicon-180x180.gif">
+<meta name="msapplication-TileImage" content="https://makingrooms.org/wp-content/uploads/2016/08/cropped-favicon-270x270.gif">
+</head>
+<body class="equipment-template-default single single-equipment postid-653 shopbot-cnc-router white-banner">
+<nav id="main-menu">
+	<div id="social-menu-mobile">
+		<ul>
+						<li class="facebook"><a href="https://www.facebook.com/TheMakingRooms">Facebook</a></li>
+						<li class="twitter"><a href="https://twitter.com/themakingrooms">Twitter</a></li>
+						<li class="youtube"><a href="https://www.youtube.com/channel/UCQAVLgkbSy3fBjbDRQ4hASA">YouTube</a></li>
+						<li class="linkedin"><a href="https://www.linkedin.com/company/themakingrooms">Linkedin</a></li>
+					</ul>
+	</div>	
+	
+	<ul>
+		<li>
+<a href="/">Home</a>
+	</li>
+		<li>
+<a href="/design-prototyping/">Design & Prototyping Services</a>
+			<ul>
+			<li><a href="/3d-printing/">3D Printing & Rapid Prototyping</a></li>
+			<li><a href="/engineering-design-prototyping/">Engineering Design & Prototyping</a></li>
+			<li><a href="/bespoke-products-artworks/">Bespoke Products & Artworks</a></li>
+			<li><a href="/prototyping-guide/">Prototyping guide</a></li>
+			<li><a></a></li>
+			</ul>
+		</li>
+		<li>
+<a href="/entrepreneurs-makers/">Entrepreneurs & Makers</a>
+			<ul>
+			<li><a href="/techblackburn/">TECH BLACKBURN</a></li>
+			<li><a href="/creative-accelerator/">Creative Accelerator</a></li>
+			<li><a href="/young-accelerator-programme/">Young Accelerator Programme</a></li>
+			<li><a href="/equipment-booking-training/">Equipment Commercial Booking & Training</a></li>
+			<li><a href="/community/">Studio Space</a></li>
+			<li><a href="/events/">Events & Workshops</a></li>
+			</ul>
+		</li>
+		<li>
+<a href="/fab-lab-blackburn/">Fab Lab Blackburn</a>
+			<ul>
+			<li><a href="/fablab-covid-rules/">Fab Lab Saturdays covid rules</a></li>
+			<li><a href="/about-fab-labs/">About Fab Labs</a></li>
+			<li><a href="/equipment/">Equipment</a></li>
+			<li><a href="/projects/">Projects</a></li>
+			<li><a href="/events/">Events & Workshops</a></li>
+			</ul>
+		</li>
+		<li>
+<a href="/about/">About The Making Rooms</a>
+			<ul>
+			<li><a href="/about/contact-and-directions/">Contact and Directions</a></li>
+			<li><a href="/newsleter/">Newsletter</a></li>
+			<li><a href="/about/our-team/">Our team</a></li>
+			<li><a href="/news/">News</a></li>
+			<li><a href="/covid/">Covid</a></li>
+			</ul>
+		</li>
+		</ul>
+</nav>
+
+<div class="outer-wrapper" id="banner-wrapper">
+	<div id="site-title"><a href="/">The Making Rooms</a></div>
+	<div id="banner-buttons">
+				<div id="user-button" class="loggedout"><a href="#login">Log In</a></div>
+		<div id="user-login">
+			
+		<form name="loginform" id="loginform" action="https://makingrooms.org/wp-login.php" method="post">
+			
+			<p class="login-username">
+				<label for="user_login">Username or Email Address</label>
+				<input type="text" name="log" id="user_login" class="input" value="" size="20">
+			</p>
+			<p class="login-password">
+				<label for="user_pass">Password</label>
+				<input type="password" name="pwd" id="user_pass" class="input" value="" size="20">
+			</p>
+			
+			<p class="login-remember"><label><input name="rememberme" type="checkbox" id="rememberme" value="forever"> Remember Me</label></p>
+			<p class="login-submit">
+				<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary" value="Log In">
+				<input type="hidden" name="redirect_to" value="https://makingrooms.org/equipment/shopbot-cnc-router/">
+			</p>
+			
+		</form>			<div class="password-reset">Forgotten your password? <a href="/password-reset/">Click here</a>
+</div>			
+			<div class="register">Need an account?<br><a href="/register">Click here to register.</a>
+</div>
+		</div>
+				<div id="social-button"><a href="#social">Social</a></div>
+		<div id="social-menu">
+			<ul>
+								<li class="facebook"><a href="https://www.facebook.com/TheMakingRooms">Facebook</a></li>
+								<li class="twitter"><a href="https://twitter.com/themakingrooms">Twitter</a></li>
+								<li class="youtube"><a href="https://www.youtube.com/channel/UCQAVLgkbSy3fBjbDRQ4hASA">YouTube</a></li>
+								<li class="linkedin"><a href="https://www.linkedin.com/company/themakingrooms">Linkedin</a></li>
+							</ul>
+		</div>
+		<div id="search-button"><a href="#search-form">Search</a></div>
+		<div id="search-form"><form role="search" method="get" id="searchform" class="searchform" action="https://makingrooms.org/">
+    <div>
+        <label class="screen-reader-text" for="s"></label>
+        <input type="text" value="" name="s" id="s" placeholder="Search">
+        <input type="submit" id="searchsubmit" value="GO">
+    </div>
+</form></div>
+		<div id="menu-button"><a href="#main-menu">Menu</a></div>
+	</div>
+</div>	<div id="big-page-wrapper">
+	<div id="page" class="outer-wrapper">
+	<div id="main" class="inner-wrapper">
+						<div id="booking-calendar">
+			<div class="close">Close</div>
+			
+		</div>
+				<div class="story">
+			<h2>Shopbot CNC Router</h2>
+			<p>The Shopbot is a large bed CNC Router capable of milling materials in 2D or 3D using a variety of shapes and sizes of milling bits. This machine is mostly used to cut sheet materials up to 2,440mm x 1,220mm including plywood, MDF, high density foam, plastics and also metals. It can be used to make a variety of larger things from furniture to large 3D moulds.</p>
+<p><img loading="lazy" class="alignnone size-full wp-image-562" src="/wp-content/uploads/2017/01/IMG_20170125_145455-800x600.jpg" alt="IMG_20170125_145455 (800x600)" width="800" height="600" srcset="/wp-content/uploads/2017/01/IMG_20170125_145455-800x600.jpg 800w, /wp-content/uploads/2017/01/IMG_20170125_145455-800x600-300x225.jpg 300w, /wp-content/uploads/2017/01/IMG_20170125_145455-800x600-768x576.jpg 768w, /wp-content/uploads/2017/01/IMG_20170125_145455-800x600-251x188.jpg 251w, /wp-content/uploads/2017/01/IMG_20170125_145455-800x600-501x376.jpg 501w" sizes="(max-width: 800px) 100vw, 800px"></p>
+<h2>Bed size</h2>
+<p>The Shopbot has a bed size of 2,400mm x 1,220mm and can cut up to a depth of around 150mm, depending on geometry.</p>
+<h2>Materials</h2>
+<p>The Shopbot can mill just about anything but the most common materials used are plywood, MDF and high-density foam</p>
+<h2>Input files</h2>
+<p>For 2D cutting of furniture, etc most 2D drawing files can be used, including PDFs but it is easier to use vector drawing files if possible.</p>
+<p>For 3D cutting, .stl files are required &#8211; the same as the standard files for 3D printing.</p>
+<p>&nbsp;</p>
+					
+		</div>
+		<div class="sidebar">
+						<div class="panel login">
+				<h4>Book Equipment</h4>
+				<p>You must be logged in to book equipment.</p> 
+				<ul>
+					<li><a id="user-login-equipment" href="#login">Log in here</a></li>
+					<li><a href="/register">Register a new account here</a></li>
+				</ul>
+				
+			</div>
+			
+						
+
+						<div class="links-and-downloads panel white">
+				<h4>Links and Downloads</h4>
+				<ul>
+									<li><a href="http://www.shopbottools.com/mProducts/prSalpha.htm">Shopbot PRS Alpha website</a></li>
+									<li><a href="https://www.opendesk.cc/">opendesk - Free Downloads</a></li>
+								</ul>
+			</div>
+						<div class="panel all-equipment link">
+								<div class="thumb" style="background-image: url('/wp-content/uploads/2019/01/20180925_141515-180x208.jpg')"></div>
+				<a href="/equipment">View all Equipment</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="related" class="outer-wrapper">
+	<div class="inner-wrapper">
+		<h3>Related Posts</h3>
+		<div id="post-slides">
+						<!-- object(WP_Post)#11960 (24) {
+  ["ID"]=>
+  int(120)
+  ["post_author"]=>
+  string(1) "1"
+  ["post_date"]=>
+  string(19) "2016-07-18 11:29:39"
+  ["post_date_gmt"]=>
+  string(19) "2016-07-18 10:29:39"
+  ["post_content"]=>
+  string(0) ""
+  ["post_title"]=>
+  string(28) "Precision 3D Milling Machine"
+  ["post_excerpt"]=>
+  string(0) ""
+  ["post_status"]=>
+  string(7) "publish"
+  ["comment_status"]=>
+  string(6) "closed"
+  ["ping_status"]=>
+  string(6) "closed"
+  ["post_password"]=>
+  string(0) ""
+  ["post_name"]=>
+  string(28) "precision-3d-milling-machine"
+  ["to_ping"]=>
+  string(0) ""
+  ["pinged"]=>
+  string(0) ""
+  ["post_modified"]=>
+  string(19) "2019-08-13 13:45:41"
+  ["post_modified_gmt"]=>
+  string(19) "2019-08-13 12:45:41"
+  ["post_content_filtered"]=>
+  string(0) ""
+  ["post_parent"]=>
+  int(0)
+  ["guid"]=>
+  string(66) "https://makingrooms.org/development/?post_type=equipment&#038;p=120"
+  ["menu_order"]=>
+  int(11)
+  ["post_type"]=>
+  string(9) "equipment"
+  ["post_mime_type"]=>
+  string(0) ""
+  ["comment_count"]=>
+  string(1) "0"
+  ["filter"]=>
+  string(3) "raw"
+}
+ -->
+			<div class="slide">
+				<img src="/wp-content/uploads/2016/07/Making-Rooms-product-photos-for-website-LR-4304-266x178.jpg" width="168" height="168" alt="Precision 3D Milling Machine">
+				<div class="description">
+										<div class="date">equipment</div>
+										<h4><a href="/equipment/precision-3d-milling-machine/">Precision 3D Milling Machine</a></h4>
+				</div>
+			</div>
+						<div class="clear"></div>
+		</div>
+	</div>
+</div>
+			<div id="footer" class="outer-wrapper">
+		<div class="inner-wrapper">
+				<div class="column column-1">
+			<h4>The Making Rooms</h4>
+<p>1 Exchange Street<br>
+Blackburn<br>
+BB1 7JN</p>
+<p><a href="mailto:info@makingrooms.org">info@makingrooms.org</a></p>
+<div id="ext-mouse-move"></div>
+<div id="ext-mouse-down"></div>
+<div id="ext-mouse-up"></div>
+<div id="ext-mouse-move"></div>
+<div id="ext-mouse-down"></div>
+<div id="ext-mouse-up"></div>
+<div id="ext-mouse-move"></div>
+<div id="ext-mouse-down"></div>
+<div id="ext-mouse-up"></div>
+		</div>
+				<div class="column column-2">
+			<p>Tel: <strong>07514819472</strong></p>
+<div id="ext-mouse-move"></div>
+<div id="ext-mouse-down"></div>
+<div id="ext-mouse-up"></div>
+<div id="ext-mouse-move"></div>
+<div id="ext-mouse-down"></div>
+<div id="ext-mouse-up"></div>
+<div id="ext-mouse-move"></div>
+<div id="ext-mouse-down"></div>
+<div id="ext-mouse-up"></div>
+		</div>
+				<div class="column column-3">
+			<h4><a href="/equipment/">Equipment</a></h4>
+<h4><a href="/events/">Events</a></h4>
+<h4><a href="/about/">About Us</a></h4>
+<h4><a href="/about-fab-labs/">Fab Lab</a></h4>
+<div id="ext-mouse-move"></div>
+<div id="ext-mouse-down"></div>
+<div id="ext-mouse-up"></div>
+<div id="ext-mouse-move"></div>
+<div id="ext-mouse-down"></div>
+<div id="ext-mouse-up"></div>
+<div id="ext-mouse-move"></div>
+<div id="ext-mouse-down"></div>
+<div id="ext-mouse-up"></div>
+		</div>
+				<div class="column column-4">
+			<p>&nbsp;</p>
+<div id="ext-mouse-move"></div>
+<div id="ext-mouse-down"></div>
+<div id="ext-mouse-up"></div>
+<div id="ext-mouse-move"></div>
+<div id="ext-mouse-down"></div>
+<div id="ext-mouse-up"></div>
+<div id="ext-mouse-move"></div>
+<div id="ext-mouse-down"></div>
+<div id="ext-mouse-up"></div>
+		</div>
+				</div>
+	</div>
+			
+<div id="um_upload_single" style="display:none"></div>
+<div id="um_view_photo" style="display:none">
+
+	<a href="javascript:void(0);" data-action="um_remove_modal" class="um-modal-close" aria-label="Close view photo modal">
+		<i class="um-faicon-times"></i>
+	</a>
+
+	<div class="um-modal-body photo">
+		<div class="um-modal-photo"></div>
+	</div>
+
+</div>
+<script type="text/javascript" src="/wp-content/plugins/team-booking/libs/base64/base64decode.js?ver=e7c90b10a44f4fb86fec0d37e182b071" id="tb-base64-decoder-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/team-booking/libs/remodal/remodal.js?ver=e7c90b10a44f4fb86fec0d37e182b071" id="tb-modal-script-js"></script>
+<script type="text/javascript" id="tb-frontend-script-js-extra">
+/* <![CDATA[ */
+var TB_Ajax = {"ajax_url":"https:\/\/makingrooms.org\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/team-booking/js/frontend.js?ver=e7c90b10a44f4fb86fec0d37e182b071" id="tb-frontend-script-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/advanced-custom-fields-pro/assets/inc/select2/4/select2.full.min.js?ver=4.0" id="select2-js"></script>
+<script type="text/javascript" src="/wp-includes/js/underscore.min.js?ver=1.13.1" id="underscore-js"></script>
+<script type="text/javascript" id="wp-util-js-extra">
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-includes/js/wp-util.min.js?ver=e7c90b10a44f4fb86fec0d37e182b071" id="wp-util-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/ultimate-member/assets/js/um-crop.min.js?ver=2.1.21" id="um_crop-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/ultimate-member/assets/js/um-modal.min.js?ver=2.1.21" id="um_modal-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/ultimate-member/assets/js/um-jquery-form.min.js?ver=2.1.21" id="um_jquery_form-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/ultimate-member/assets/js/um-fileupload.min.js?ver=2.1.21" id="um_fileupload-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/ultimate-member/assets/js/pickadate/picker.js?ver=2.1.21" id="um_datetime-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/ultimate-member/assets/js/pickadate/picker.date.js?ver=2.1.21" id="um_datetime_date-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/ultimate-member/assets/js/pickadate/picker.time.js?ver=2.1.21" id="um_datetime_time-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/ultimate-member/assets/js/um-raty.min.js?ver=2.1.21" id="um_raty-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/ultimate-member/assets/js/um-tipsy.min.js?ver=2.1.21" id="um_tipsy-js"></script>
+<script type="text/javascript" src="/wp-includes/js/imagesloaded.min.js?ver=4.1.4" id="imagesloaded-js"></script>
+<script type="text/javascript" src="/wp-includes/js/masonry.min.js?ver=4.2.2" id="masonry-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2b" id="jquery-masonry-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/ultimate-member/assets/js/simplebar.min.js?ver=2.1.21" id="um_scrollbar-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/ultimate-member/assets/js/um-functions.min.js?ver=2.1.21" id="um_functions-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/ultimate-member/assets/js/um-responsive.min.js?ver=2.1.21" id="um_responsive-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/ultimate-member/assets/js/um-conditional.min.js?ver=2.1.21" id="um_conditional-js"></script>
+<script type="text/javascript" id="um_scripts-js-extra">
+/* <![CDATA[ */
+var um_scripts = {"max_upload_size":"8388608","nonce":"6df049c06b"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="/wp-content/plugins/ultimate-member/assets/js/um-scripts.min.js?ver=2.1.21" id="um_scripts-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/ultimate-member/assets/js/um-profile.min.js?ver=2.1.21" id="um_profile-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/ultimate-member/assets/js/um-account.min.js?ver=2.1.21" id="um_account-js"></script>
+<script type="text/javascript" src="/wp-includes/js/wp-embed.min.js?ver=e7c90b10a44f4fb86fec0d37e182b071" id="wp-embed-js"></script>
+<script>
+acf.data = {"select2L10n":{"matches_1":"One result is available, press enter to select it.","matches_n":"%d results are available, use up and down arrow keys to navigate.","matches_0":"No matches found","input_too_short_1":"Please enter 1 or more characters","input_too_short_n":"Please enter %d or more characters","input_too_long_1":"Please delete 1 character","input_too_long_n":"Please delete %d characters","selection_too_long_1":"You can only select 1 item","selection_too_long_n":"You can only select %d items","load_more":"Loading more results&hellip;","searching":"Searching&hellip;","load_fail":"Loading failed"},"google_map_api":"https:\/\/maps.googleapis.com\/maps\/api\/js?libraries=places&ver=3&callback&language=en_GB","datePickerL10n":{"closeText":"Done","currentText":"Today","nextText":"Next","prevText":"Prev","weekHeader":"Wk","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesMin":["S","M","T","W","T","F","S"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]},"dateTimePickerL10n":{"timeOnlyTitle":"Choose Time","timeText":"Time","hourText":"Hour","minuteText":"Minute","secondText":"Second","millisecText":"Millisecond","microsecText":"Microsecond","timezoneText":"Time Zone","currentText":"Now","closeText":"Done","selectText":"Select","amNames":["AM","A"],"pmNames":["PM","P"]},"colorPickerL10n":{"hex_string":"Hex String","rgba_string":"RGBA String"},"mimeTypeIcon":"https:\/\/makingrooms.org\/wp-includes\/images\/media\/default.png","mimeTypes":{"jpg|jpeg|jpe":"image\/jpeg","gif":"image\/gif","png":"image\/png","bmp":"image\/bmp","tiff|tif":"image\/tiff","webp":"image\/webp","ico":"image\/x-icon","heic":"image\/heic","asf|asx":"video\/x-ms-asf","wmv":"video\/x-ms-wmv","wmx":"video\/x-ms-wmx","wm":"video\/x-ms-wm","avi":"video\/avi","divx":"video\/divx","flv":"video\/x-flv","mov|qt":"video\/quicktime","mpeg|mpg|mpe":"video\/mpeg","mp4|m4v":"video\/mp4","ogv":"video\/ogg","webm":"video\/webm","mkv":"video\/x-matroska","3gp|3gpp":"video\/3gpp","3g2|3gp2":"video\/3gpp2","txt|asc|c|cc|h|srt":"text\/plain","csv":"text\/csv","tsv":"text\/tab-separated-values","ics":"text\/calendar","rtx":"text\/richtext","css":"text\/css","vtt":"text\/vtt","dfxp":"application\/ttaf+xml","mp3|m4a|m4b":"audio\/mpeg","aac":"audio\/aac","ra|ram":"audio\/x-realaudio","wav":"audio\/wav","ogg|oga":"audio\/ogg","flac":"audio\/flac","mid|midi":"audio\/midi","wma":"audio\/x-ms-wma","wax":"audio\/x-ms-wax","mka":"audio\/x-matroska","rtf":"application\/rtf","pdf":"application\/pdf","class":"application\/java","tar":"application\/x-tar","zip":"application\/zip","gz|gzip":"application\/x-gzip","rar":"application\/rar","7z":"application\/x-7z-compressed","psd":"application\/octet-stream","xcf":"application\/octet-stream","doc":"application\/msword","pot|pps|ppt":"application\/vnd.ms-powerpoint","wri":"application\/vnd.ms-write","xla|xls|xlt|xlw":"application\/vnd.ms-excel","mdb":"application\/vnd.ms-access","mpp":"application\/vnd.ms-project","docx":"application\/vnd.openxmlformats-officedocument.wordprocessingml.document","docm":"application\/vnd.ms-word.document.macroEnabled.12","dotx":"application\/vnd.openxmlformats-officedocument.wordprocessingml.template","dotm":"application\/vnd.ms-word.template.macroEnabled.12","xlsx":"application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet","xlsm":"application\/vnd.ms-excel.sheet.macroEnabled.12","xlsb":"application\/vnd.ms-excel.sheet.binary.macroEnabled.12","xltx":"application\/vnd.openxmlformats-officedocument.spreadsheetml.template","xltm":"application\/vnd.ms-excel.template.macroEnabled.12","xlam":"application\/vnd.ms-excel.addin.macroEnabled.12","pptx":"application\/vnd.openxmlformats-officedocument.presentationml.presentation","pptm":"application\/vnd.ms-powerpoint.presentation.macroEnabled.12","ppsx":"application\/vnd.openxmlformats-officedocument.presentationml.slideshow","ppsm":"application\/vnd.ms-powerpoint.slideshow.macroEnabled.12","potx":"application\/vnd.openxmlformats-officedocument.presentationml.template","potm":"application\/vnd.ms-powerpoint.template.macroEnabled.12","ppam":"application\/vnd.ms-powerpoint.addin.macroEnabled.12","sldx":"application\/vnd.openxmlformats-officedocument.presentationml.slide","sldm":"application\/vnd.ms-powerpoint.slide.macroEnabled.12","onetoc|onetoc2|onetmp|onepkg":"application\/onenote","oxps":"application\/oxps","xps":"application\/vnd.ms-xpsdocument","odt":"application\/vnd.oasis.opendocument.text","odp":"application\/vnd.oasis.opendocument.presentation","ods":"application\/vnd.oasis.opendocument.spreadsheet","odg":"application\/vnd.oasis.opendocument.graphics","odc":"application\/vnd.oasis.opendocument.chart","odb":"application\/vnd.oasis.opendocument.database","odf":"application\/vnd.oasis.opendocument.formula","wp|wpd":"application\/wordperfect","key":"application\/vnd.apple.keynote","numbers":"application\/vnd.apple.numbers","pages":"application\/vnd.apple.pages","stl":"application\/wavefront-stl","svg":"image\/svg+xml","svgz":"image\/svg+xml"},"admin_url":"https:\/\/makingrooms.org\/wp-admin\/","ajaxurl":"https:\/\/makingrooms.org\/wp-admin\/admin-ajax.php","nonce":"7453e45286","acf_version":"5.10.2","wp_version":"5.8.2","browser":"","locale":"en_GB","rtl":false,"screen":null,"post_id":null,"validation":null,"editor":"classic"};
+</script>
+<script>
+acf.l10n = {"Class":{"error":"Error! Please enter a higher value"}};
+</script>
+<script>
+acf.doAction( 'prepare' );
+</script>
+		<script type="text/javascript">
+			jQuery( window ).on( 'load', function() {
+				jQuery('input[name="um_request"]').val('');
+			});
+		</script>
+		</div>
+</body>
+</html>
