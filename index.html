@@ -1,12 +1,50 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
+<title>The Making Rooms</title>
+</head>
 
-{% include hero.html 
-    title="Welcome to The Making Rooms!" 
-    content="The Making Rooms is a place where creativity, technology and advanced manufacturing come together in a community facility for use by artists, inventors, students, children and just about everyone else to design and make anything from high-tech products and gadgets to toys, artworks, home decorations and accessibility devices." 
-    image="assets/img/TMR.jpeg" 
-    %}
+<body>
+    <div id="navbar-responsive" class="flex flex-row fixed top-12 z-50 bg-tmrorange border-black border-2 justify-between items-center px-4 h-16 w-full transition-all ease-in-out">
+  <img id="header-image" class="h-28 transition-all ease-in-out" src="https://www.makingrooms.org/wp-content/themes/themakingrooms/images/making-rooms-logo.png">
+  
+  <ul class="flex flex-col lg:flex-row text-xl font-bold">
+    <li>
+    <a href="javascript:void(0);" class="icon display-mobile " onclick="responsiveNavbar()">
+    <i class="fa fa-bars">Menu</i>
+    </a>
+    </li>
+    <li><a class="box-shadow-hover" href="#">Home</a></li>
+    <!--
+      <li><a class="box-shadow-hover" href="#">News</a></li>
+    <li><a class="box-shadow-hover" href="#">Events</a></li>
+    <li><a class="box-shadow-hover" href="#">Projects</a></li>
+    <li><a class="box-shadow-hover" href="#">Labs</a></li>
+    <li><a class="box-shadow-hover" href="#">Residents</a></li>
+    <li><a class="box-shadow-hover" href="#">Commercial</a></li>
+    <li><a class="box-shadow-hover" href="#">About</a></li>
+    
+    -->
+    
+  </ul>
+</div>
+
+    <div>
+        <div class="h-[48rem] relative top-0">
+    <div class="flex justify-start items-center w-full h-full absolute z-10">
+        <div class="mx-4 mt-24 hero-message box-shadow">
+            <h1 class="text-4xl font-bold">Welcome to The Making Rooms!</h1>
+            <br>
+            <p>The Making Rooms is a place where creativity, technology and advanced manufacturing come together in a community facility for use by artists, inventors, students, children and just about everyone else to design and make anything from high-tech products and gadgets to toys, artworks, home decorations and accessibility devices.</p>
+        </div>
+    </div>
+    <img class="hero-image" src="assets/img/TMR.jpeg">
+</div>
 
 
 <div class="container mx-auto my-12">
@@ -19,28 +57,121 @@ layout: default
 
         <div class="grid grid-cols-1 gap-2">
 
-            {% include card.html 
-                name="FabLab Blackburn"
-                href="fablab"
-                image="/assets/img/tmr_lab.jpg"
-                hoverText=lab.text
-                colour="tmrorange"
-                %}
+            <a class="border-2 border-black flex flex-col" href="">
+    <div class="card-image-container relative max-h-[80%]">
+      <div class="h-full w-full text-white opacity-0 text-center flex justify-center align-middle absolute hover:opacity-100 hover:bg-black ease-in-out transition duration-200">
+        <p></p>
+      </div>
+   
+       <img class="w-full h-full object-cover" src="/assets/img/tmr_lab.jpg">
+      
+    </div>
+    
+    
+    <!-- bg-pastelred bg-pastelredhighlight bg-pastelorange bg-pastelorangehighlight bg-pastelyellow bg-pastelyellowhighlight bg-pastelgreen bg-pastelgreenhighlight bg-pastelblue bg-pastelbluehighlight bg-pastelindigo bg-pastelindigohighlight bg-pastelpurple bg-pastelpurplehighlight bg-pastelpink bg-pastelpinkhighlight bg-tmrorange bg-tmrpastel -->
+   
+      <div class="font-bold h-full bg-tmrorange p-2 border-t-2 border-black">
+        <h2>FabLab Blackburn</h2>
+        <h2>→</h2>
+      </div>
+      
+  </a>
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
             
-                {% for lab in site.data.labs %}
+                
         
         
-                    {% include card.html 
-                        name=lab.name
-                        href=lab.href
-                        image=lab.image
-                        hoverText=lab.text
-                        colour=lab.colour
-                        %}
+                    <a class="border-2 border-black flex flex-col" href="">
+    <div class="card-image-container relative max-h-[80%]">
+      <div class="h-full w-full text-white opacity-0 text-center flex justify-center align-middle absolute hover:opacity-100 hover:bg-black ease-in-out transition duration-200">
+        <p>This text was hidden before!</p>
+      </div>
+   
+       <img class="w-full h-full object-cover" src="/assets/img/ecoLab.jpg">
+      
+    </div>
+    
+    
+    <!-- bg-pastelred bg-pastelredhighlight bg-pastelorange bg-pastelorangehighlight bg-pastelyellow bg-pastelyellowhighlight bg-pastelgreen bg-pastelgreenhighlight bg-pastelblue bg-pastelbluehighlight bg-pastelindigo bg-pastelindigohighlight bg-pastelpurple bg-pastelpurplehighlight bg-pastelpink bg-pastelpinkhighlight bg-tmrorange bg-tmrpastel -->
+   
+      <div class="font-bold h-full bg-pastelgreen p-2 border-t-2 border-black">
+        <h2>ecoLab</h2>
+        <h2>→</h2>
+      </div>
+      
+  </a>
         
-                {% endfor %}
+                
+        
+        
+                    <a class="border-2 border-black flex flex-col" href="">
+    <div class="card-image-container relative max-h-[80%]">
+      <div class="h-full w-full text-white opacity-0 text-center flex justify-center align-middle absolute hover:opacity-100 hover:bg-black ease-in-out transition duration-200">
+        <p></p>
+      </div>
+   
+       <img class="w-full h-full object-cover" src="/assets/img/repairlab.jpg">
+      
+    </div>
+    
+    
+    <!-- bg-pastelred bg-pastelredhighlight bg-pastelorange bg-pastelorangehighlight bg-pastelyellow bg-pastelyellowhighlight bg-pastelgreen bg-pastelgreenhighlight bg-pastelblue bg-pastelbluehighlight bg-pastelindigo bg-pastelindigohighlight bg-pastelpurple bg-pastelpurplehighlight bg-pastelpink bg-pastelpinkhighlight bg-tmrorange bg-tmrpastel -->
+   
+      <div class="font-bold h-full bg-pastelpurple p-2 border-t-2 border-black">
+        <h2>ReMakery</h2>
+        <h2>→</h2>
+      </div>
+      
+  </a>
+        
+                
+        
+        
+                    <a class="border-2 border-black flex flex-col" href="">
+    <div class="card-image-container relative max-h-[80%]">
+      <div class="h-full w-full text-white opacity-0 text-center flex justify-center align-middle absolute hover:opacity-100 hover:bg-black ease-in-out transition duration-200">
+        <p></p>
+      </div>
+   
+       <img class="w-full h-full object-cover" src="/assets/img/textileLab.jpg">
+      
+    </div>
+    
+    
+    <!-- bg-pastelred bg-pastelredhighlight bg-pastelorange bg-pastelorangehighlight bg-pastelyellow bg-pastelyellowhighlight bg-pastelgreen bg-pastelgreenhighlight bg-pastelblue bg-pastelbluehighlight bg-pastelindigo bg-pastelindigohighlight bg-pastelpurple bg-pastelpurplehighlight bg-pastelpink bg-pastelpinkhighlight bg-tmrorange bg-tmrpastel -->
+   
+      <div class="font-bold h-full bg-pastelpink p-2 border-t-2 border-black">
+        <h2>fabricLab</h2>
+        <h2>→</h2>
+      </div>
+      
+  </a>
+        
+                
+        
+        
+                    <a class="border-2 border-black flex flex-col" href="">
+    <div class="card-image-container relative max-h-[80%]">
+      <div class="h-full w-full text-white opacity-0 text-center flex justify-center align-middle absolute hover:opacity-100 hover:bg-black ease-in-out transition duration-200">
+        <p>This text was hidden before!</p>
+      </div>
+   
+       <img class="w-full h-full object-cover" src="/assets/img/preciousPlastics.jpeg">
+      
+    </div>
+    
+    
+    <!-- bg-pastelred bg-pastelredhighlight bg-pastelorange bg-pastelorangehighlight bg-pastelyellow bg-pastelyellowhighlight bg-pastelgreen bg-pastelgreenhighlight bg-pastelblue bg-pastelbluehighlight bg-pastelindigo bg-pastelindigohighlight bg-pastelpurple bg-pastelpurplehighlight bg-pastelpink bg-pastelpinkhighlight bg-tmrorange bg-tmrpastel -->
+   
+      <div class="font-bold h-full bg-pastelorange p-2 border-t-2 border-black">
+        <h2>Precious Plastic</h2>
+        <h2>→</h2>
+      </div>
+      
+  </a>
+        
+                
         
             </div>
 
@@ -55,7 +186,21 @@ layout: default
             </div>
 
             <div class="grid grid-cols-1 gap-2">
-                {% include event.html %}
+                    <!-- bg-pastelred bg-pastelredhighlight bg-pastelorange bg-pastelorangehighlight bg-pastelyellow bg-pastelyellowhighlight bg-pastelgreen bg-pastelgreenhighlight bg-pastelblue bg-pastelbluehighlight bg-pastelindigo bg-pastelindigohighlight bg-pastelpurple bg-pastelpurplehighlight bg-pastelpink bg-pastelpinkhighlight bg-tmrorange bg-tmrpastel -->
+
+
+<div class="flex w-full bg-white border-t-2 border-b-2 border-r-2 border-black">
+    <div class="flex flex-col h-24 w-24 bg-tmrorange align-middle justify-center text-center border-black border-l-2 border-r-2">
+      <p class="font-bold">EVERY</p>
+      <p class="font-bold text-4xl">-</p>
+      <p class="font-bold">SATURDAY</p>
+    </div>
+
+    <div class="flex flex-col justify-center w-full pl-4">
+        <p class="font-bold">FabLab</p>
+        <h2 class="m-0">Public Open Day</h2>
+    </div>
+</div>
 
             </div>
         </div>
@@ -75,3 +220,49 @@ layout: default
     
 
 </div>
+
+    </div>
+
+    <div class="footer">
+    <div class="footer-section">
+      <p>The Making Rooms</p>
+      <p>1 Exchange Street</p>
+      <p>Blackburn</p>
+      <p>BB1 7JN</p>
+    </div>
+    
+    <div  class="footer-section">
+      <p>info@makingrooms.org</p>
+      <p>Tel: 01254 460150</p>
+      <p>(c) 2023. The Making Rooms. </p>
+      <p>Design by uzair.</p>
+    </div>
+    
+    <div  class="footer-section">
+      <ul class="footer-nav">
+      <li><a class="box-shadow-hover" href="#">Home</a></li>
+      <!--
+      <li><a class="box-shadow-hover" href="#">News</a></li>
+      <li><a class="box-shadow-hover" href="#">Events</a></li>
+      <li><a class="box-shadow-hover" href="#">Projects</a></li>
+      -->
+    </ul>
+    </div>
+    
+    <!--
+      <div  class="footer-section">
+      <ul class="footer-nav">
+      <li><a class="box-shadow-hover" href="#">Labs</a></li>
+      <li><a class="box-shadow-hover" href="#">Studios</a></li>
+      <li><a class="box-shadow-hover" href="#">Commercial</a></li>
+      <li><a class="box-shadow-hover" href="#">About</a></li>
+    </ul>
+    </div>
+    -->
+        
+    
+  </div>
+</body>
+
+<script src="/assets/js/responsive.js"></script>
+</html>
