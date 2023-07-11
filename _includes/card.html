@@ -1,0 +1,19 @@
+<a class="border-2 border-black flex flex-col" href="{{include.url}}">
+    <div class="card-image-container relative max-h-[80%]">
+      <div class="h-full w-full text-white opacity-0 text-center flex justify-center align-middle absolute hover:opacity-100 hover:bg-black ease-in-out transition duration-200">
+        <p>{{ include.hoverText }}</p>
+      </div>
+   
+       <img class="w-full h-full object-cover" src="{{ include.image }}">
+      
+    </div>
+    
+    
+    <!-- bg-pastelred bg-pastelredhighlight bg-pastelorange bg-pastelorangehighlight bg-pastelyellow bg-pastelyellowhighlight bg-pastelgreen bg-pastelgreenhighlight bg-pastelblue bg-pastelbluehighlight bg-pastelindigo bg-pastelindigohighlight bg-pastelpurple bg-pastelpurplehighlight bg-pastelpink bg-pastelpinkhighlight bg-tmrorange bg-tmrpastel -->
+   
+      <div class="font-bold h-full bg-{{ include.colour }} p-2 border-t-2 border-black">
+        <h2>{{ include.name }}</h2>
+        <h2>→</h2>
+      </div>
+      
+  </a>

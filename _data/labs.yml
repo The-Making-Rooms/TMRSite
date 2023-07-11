@@ -1,0 +1,21 @@
+- name: ecoLab
+  url: #
+  image: /assets/img/ecoLab.jpg
+  text: This text was hidden before!
+  colour: pastelgreen
+
+- name: ReMakery
+  url: #
+  image: /assets/img/repairlab.jpg
+  colour: pastelpurple
+
+- name: fabricLab
+  url: #
+  image: /assets/img/textileLab.jpg
+  colour: pastelpink
+
+- name: Precious Plastic
+  url: ecoLab
+  image: /assets/img/preciousPlastics.jpeg
+  text: This text was hidden before!
+  colour: pastelorange

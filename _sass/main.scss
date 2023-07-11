@@ -1,0 +1,449 @@
+:root {
+    --pastelred: #ffadad; 
+    --pastelredhighlight: #ff1414; 
+    --pastelorange: #ffd6a5; 
+    --pastelorangehighlight: #ff8f0a; 
+    --pastelyellow: #fdffb6; 
+    --pastelyellowhighlight: #e4eb00; 
+    --pastelgreen: #caffbf; 
+    --pastelgreenhighlight: #29f000; 
+    --pastelblue: #9bf6ff; 
+    --pastelbluehighlight: #00e8ff; 
+    --pastelindigo: #a0c4ff; 
+    --pastelindigohighlight: #0564ff; 
+    --pastelpurple: #bdb2ff; 
+    --pastelpurplehighlight: #3a1aff; 
+    --pastelpink: #ffc6ff; 
+    --pastelpinkhighlight: #ff2eff; 
+    --tmrorange: #fadb00; 
+    --tmrpastel: #fff8c7; 
+  }
+  
+  .bg-red {
+    background-color: var(--pastelred) !important; 
+  }
+  
+  .bg-orange {
+    background-color: var(--pastelorange) !important; 
+  }
+  
+  .bg-yellow {
+    background-color: var(--pastelyellow) !important; 
+  }
+  
+  .bg-green {
+    background-color: var(--pastelgreen) !important; 
+  }
+  
+  .bg-blue {
+    background-color: var(--pastelblue) !important; 
+  }
+  
+  .bg-indigo {
+    background-color: var(--pastelindigo) !important; 
+  }
+  
+  .bg-purple{
+    background-color: var(--pastelpurple) !important; 
+  }
+  
+  .bg-pink {
+    background-color: var(--pastelpink) !important; 
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FFF8C7;
+    font-family: 'Jura', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .page-section-split {
+    display: flex;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.2rem;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .display-mobile {
+    display: none;
+  }
+  
+  h1 {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .box-shadow-hover {
+    width: fit-content;
+    height: fit-content;
+    
+    transition: 0.25s;
+    padding: 0.5rem;
+    
+  }
+  
+  .box-shadow, .box-shadow-hover:hover {
+    --shadow-offset: 0.35rem;
+    --shadow-border: 0.1rem;
+    
+    background-color: black;
+    color: white;
+    
+    width: fit-content;
+    height: fit-content;
+    
+    box-shadow: 
+      
+      var(--shadow-offset) var(--shadow-offset) #FADB00,
+      
+      calc(var(--shadow-offset) - var(--shadow-border)) calc(var(--shadow-offset) - var(--shadow-border)) black,
+      calc(var(--shadow-offset) - var(--shadow-border)) calc(var(--shadow-offset) + var(--shadow-border)) black,
+      
+      calc(var(--shadow-offset) + var(--shadow-border)) calc(var(--shadow-offset) - var(--shadow-border)) black,
+      calc(var(--shadow-offset) + var(--shadow-border)) calc(var(--shadow-offset) + var(--shadow-border)) black;
+
+      //calculates to
+      // 0.35rem 0.35rem #FADB00,
+      // 0.25rem 0.45rem black,
+      // 0.25rem 0.25rem black,
+      // 0.45rem 0.45rem black,
+      // 0.45rem 0.25rem black;
+
+      //box-shadow: 0.35rem 0.35rem #FADB00, 0.25rem 0.45rem black, 0.25rem 0.25rem black, 0.45rem 0.45rem black, 0.45rem 0.25rem black;
+
+     
+  }
+  
+  
+  .card {
+    font-family: 'Jura', sans-serif;
+    
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: space-evenly;
+    width:100%;
+    
+  }
+  
+  .card-text {
+    height: 100%;
+    text-decoration-line: none;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.2rem solid black;
+    padding: 0 1rem 0 1rem;
+    background-color: #CAFFBF;
+    box-sizing: border-box;
+    transition: text-decoration 0.2s;
+    }
+  
+  
+  
+  .card-hover-text {
+    color: white;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: 0.25s;
+  }
+  
+  .card-hover-text:hover {
+    background-color: rgba(0,0,0, 0.8);
+    position: absolute;
+    opacity: 1;
+  }
+  
+  /*
+  .navbar{
+    position: absolute;
+    z-index: 999;
+    font-family: 'Jura', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    height: 6rem;
+    width: 100%;
+    margin: 2rem 0 2rem 0;
+    border-top: 0.2rem solid black;
+    border-bottom: 0.2rem solid black;
+    background-color: #FADB00;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem 0 2rem; 
+  }
+    /*transition: 0.2s;
+*/
+  
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nav-image {
+    height: 8rem;
+    transition: height 0.2s;
+  }
+  
+  .nav-list {
+    height: 100%;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    
+    padding: 0;
+    margin: 0;
+    
+    display:flex;
+    align-items: center;
+  }
+  
+  .nav-list > li {
+    padding: 0 0.75rem 0 0.75rem;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    
+    .nav-image {
+      height: 6rem;
+    }
+    
+  }
+  
+  .sticky + .page-section {
+    padding-top: 12rem;
+  }
+  
+  .card-row{
+    margin-top: 2rem;
+    display:flex;
+    
+  }
+  
+  .page-section {
+    padding:2rem;
+  }
+  
+  .footer {
+    height: 12rem;
+    background-color: #FADB00;
+    border-top: 0.3rem solid black; 
+    
+    font-weight:bold;
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  
+    box-sizing: border-box;
+  }
+  
+  .footer-section{
+    margin-right: 4rem;
+  }
+  .footer-nav {
+    list-style-type: none;
+    text-decoration: underline;
+    
+  }
+  
+  .footer-nav > li {
+    padding: 0.5rem 0 0.5rem 0;
+  }
+  
+  
+  .hero-image {
+    height:48rem;
+    width: 100%;
+    object-fit: cover;
+    position:relative;
+    background-position: 30px;
+      
+  }
+  
+  .hero-overlay{
+    z-index: 998;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100%;
+    position: absolute;
+    
+  }
+  
+  
+  
+  .hero-message{
+    padding: 1rem;
+    width: 32rem;
+  }
+  
+  .hero-message > p {
+    font-size: 1.5rem;
+  }
+  
+  
+  @media screen and (max-width: 1000px) {
+
+    .labs-row{
+      flex-direction: column;
+      align-items: center;
+    }
+    .page-section-split{
+      flex-direction: column;
+      width: 100%;
+      
+    }
+    
+    .page-section-split .page-section{
+      padding: 0;
+    }
+    
+    
+    .page-section.labs{
+      width: 100%;
+      padding: 0 2rem 0 2rem;
+      box-sizing: border-box;
+    }
+    
+    .page-section.agenda{
+      width: 100%;
+      padding: 0 2rem 0 2rem;
+      box-sizing: border-box;
+    }
+    .nav-list{
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .nav-list li:not(:first-child) {display: none;}
+    
+    .display-mobile {
+      display: block;
+    }
+  
+    .hero-message {
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+  
+      margin: 1.5rem;
+      width:100%;
+      height: fit-content;
+    }
+    
+    .responsive {
+      transition: 0.5s;
+      position: fixed;
+      height: 100vh;
+      width: 100vw;
+      
+      bottom: 0;
+      left: 0;
+      right:0;
+      top: 0;
+      
+      margin: 0;
+      flex-direction: column;
+      
+      .nav-list li{
+        display: block;
+        padding: 0.5rem 0 0.5rem 0;
+      }
+      
+      .nav-image{
+        margin: 2rem;
+      }
+      
+    }
+    
+    .footer{
+      flex-direction: column;
+      height: fit-content;
+    }
+    
+    .footer-section {
+      margin: 0;
+      text-align: center;
+    }
+    
+    .footer-nav {
+      padding: 0;
+    }
+    
+    
+    }
+  
+  .labs{
+    width: 65%;
+  }
+  
+  
+  
+  
+
+
+  .agenda {
+    width: 35%;
+    padding-left: 0 ;
+  }
+  
+  .agenda-list{
+    display:flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  
+  
+  
+  .agenda-date-mid {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .agenda-item-date p{
+    padding: 0;
+    margin: 0;
+  }
+  
+  .shape-1 {
+    position:absolute;
+    bottom: -4rem;
+    transform: rotate(18deg);
+  }
+  
