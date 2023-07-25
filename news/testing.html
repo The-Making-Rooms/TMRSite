@@ -9,50 +9,77 @@
 <title>The Making Rooms</title>
 </head>
 
-<body>
+<body class="flex flex-col h-full min-h-screen ">
     <div id="navbar-responsive" class="flex flex-row fixed top-12 z-50 bg-tmrorange border-black border-2 justify-between items-center px-4 h-16 w-full transition-all ease-in-out">
-  <img id="header-image" class="h-28 transition-all ease-in-out" src="https://www.makingrooms.org/wp-content/themes/themakingrooms/images/making-rooms-logo.png">
+  <img id="header-image" class="h-28 transition-all ease-in-out" src="/assets/img/making-rooms-logo.png" alt="The Making rooms Logo">
   
-  <ul class="flex flex-col lg:flex-row text-xl font-bold">
+  <ul id="navul" class="flex flex-col [&>*:not(:first-child)]:hidden lg:flex-row text-xl font-bold lg:[&>*:not(:first-child)]:flex">
     <li>
     <a href="javascript:void(0);" class="icon display-mobile " onclick="responsiveNavbar()">
-    <i class="fa fa-bars">Menu</i>
+    <i class="">Menu</i>
     </a>
     </li>
-    <li><a class="box-shadow-hover" href="#">Home</a></li>
+    <li class="mx-4 my-2 md:mx-0"><a class="box-shadow-hover" href="/">Home</a></li>
+    
+    <li class="mx-4 my-2 md:mx-0"><a class="box-shadow-hover" href="/entrepreneurs-makers/">Entrepreneurs and Makers</a></li>
+    <li class="mx-4 my-2 md:mx-0"><a class="box-shadow-hover" href="/services">Services</a></li>
+    <li class="mx-4 my-2 md:mx-0"><a class="box-shadow-hover" href="/about">About</a></li>
+    
     <!--
+      <li class="mx-4 my-2 md:mx-0"><a class="box-shadow-hover" href="/labs">Labs</a></li>
       <li><a class="box-shadow-hover" href="#">News</a></li>
     <li><a class="box-shadow-hover" href="#">Events</a></li>
     <li><a class="box-shadow-hover" href="#">Projects</a></li>
-    <li><a class="box-shadow-hover" href="#">Labs</a></li>
+    
     <li><a class="box-shadow-hover" href="#">Residents</a></li>
-    <li><a class="box-shadow-hover" href="#">Commercial</a></li>
-    <li><a class="box-shadow-hover" href="#">About</a></li>
+    
+    w-screen h-screen
     
     -->
     
   </ul>
 </div>
 
-    <div class="h-72 w-full relative top-0">
+    <div class="h-72 mb-4 w-full relative top-0 border-b-4 border-black">
     <div class="flex justify-start  h-full absolute z-10">
-        <div class="mt-96 box-shadow">
+        <div class="mt-40 ml-4 p-3 box-shadow">
             <h1 class="text-4xl font-bold">testing</h1>
         </div>
     </div>
-    <img class="h-full w-full object-cover" src="http://localhost:4000/assets/img/TMR.jpeg">
+    <img class="h-full w-full object-cover" src="http://localhost:4000/assets/img/TMR.jpeg" alt="hero image">
 </div>
 
-    <div class="box-shadow">
-        <p class="text-2xl font-bold">testing</p>
-    </div>
 
-    <div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 grow mx-8 my-12 transition-all">
+        <div class="col-span-2 lg:mx-8 text-lg">
+            <div id="breadcrumbs">
+    
+    <a href="/">Home</a>
+    
+      
+        / <a href="/news/">News</a>
+      
+    
+      
+        / testing
+      
+    
+    </div>
+            <br>
+            <p>This is a test</p>
+
+        </div>
+
+        <div>
+            <div class="box-shadow p-2 mb-4">
+                <h1 class="text-3xl">Related Links</h1>
+            </div>
+        </div>
         
-
     </div>
 
-    <div class="footer">
+    <div class="footer w-full">
     <div class="footer-section">
       <p>The Making Rooms</p>
       <p>1 Exchange Street</p>
@@ -69,7 +96,7 @@
     
     <div  class="footer-section">
       <ul class="footer-nav">
-      <li><a class="box-shadow-hover" href="#">Home</a></li>
+      <li><a class="box-shadow-hover" href="/">Home</a></li>
       <!--
       <li><a class="box-shadow-hover" href="#">News</a></li>
       <li><a class="box-shadow-hover" href="#">Events</a></li>
@@ -78,16 +105,20 @@
     </ul>
     </div>
     
-    <!--
+    
       <div  class="footer-section">
+        
       <ul class="footer-nav">
+        <li><a class="box-shadow-hover" href="/about">About</a></li>
+        <!--
       <li><a class="box-shadow-hover" href="#">Labs</a></li>
       <li><a class="box-shadow-hover" href="#">Studios</a></li>
       <li><a class="box-shadow-hover" href="#">Commercial</a></li>
-      <li><a class="box-shadow-hover" href="#">About</a></li>
+      
+      -->
     </ul>
     </div>
-    -->
+    
         
     
   </div>

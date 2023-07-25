@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 *//*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
@@ -167,6 +167,8 @@ optgroup,
 select,
 textarea {
   font-family: inherit; /* 1 */
+  font-feature-settings: inherit; /* 1 */
+  font-variation-settings: inherit; /* 1 */
   font-size: 100%; /* 1 */
   font-weight: inherit; /* 1 */
   line-height: inherit; /* 1 */
@@ -301,6 +303,13 @@ ul,
 menu {
   list-style: none;
   margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+dialog {
   padding: 0;
 }
 
@@ -530,12 +539,19 @@ video {
 .z-50 {
   z-index: 50;
 }
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
 .m-0 {
   margin: 0px;
 }
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 .mx-auto {
   margin-left: auto;
@@ -545,14 +561,28 @@ video {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 .mb-4 {
   margin-bottom: 1rem;
+}
+.ml-4 {
+  margin-left: 1rem;
 }
 .mt-24 {
   margin-top: 6rem;
 }
-.mt-96 {
-  margin-top: 24rem;
+.mt-4 {
+  margin-top: 1rem;
+}
+.mt-40 {
+  margin-top: 10rem;
 }
 .flex {
   display: flex;
@@ -560,14 +590,23 @@ video {
 .grid {
   display: grid;
 }
+.hidden {
+  display: none;
+}
 .h-16 {
   height: 4rem;
+}
+.h-20 {
+  height: 5rem;
 }
 .h-24 {
   height: 6rem;
 }
 .h-28 {
   height: 7rem;
+}
+.h-64 {
+  height: 16rem;
 }
 .h-72 {
   height: 18rem;
@@ -578,14 +617,35 @@ video {
 .h-full {
   height: 100%;
 }
+.h-screen {
+  height: 100vh;
+}
+.max-h-96 {
+  max-height: 24rem;
+}
 .max-h-\[80\%\] {
   max-height: 80%;
+}
+.min-h-screen {
+  min-height: 100vh;
 }
 .w-24 {
   width: 6rem;
 }
 .w-full {
   width: 100%;
+}
+.w-screen {
+  width: 100vw;
+}
+.grow {
+  flex-grow: 1;
+}
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.list-disc {
+  list-style-type: disc;
 }
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -614,14 +674,23 @@ video {
 .gap-2 {
   gap: 0.5rem;
 }
+.gap-4 {
+  gap: 1rem;
+}
 .gap-8 {
   gap: 2rem;
 }
 .border-2 {
   border-width: 2px;
 }
+.border-4 {
+  border-width: 4px;
+}
 .border-b-2 {
   border-bottom-width: 2px;
+}
+.border-b-4 {
+  border-bottom-width: 4px;
 }
 .border-l-2 {
   border-left-width: 2px;
@@ -631,6 +700,9 @@ video {
 }
 .border-t-2 {
   border-top-width: 2px;
+}
+.border-t-4 {
+  border-top-width: 4px;
 }
 .border-black {
   --tw-border-opacity: 1;
@@ -712,12 +784,22 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
 }
 .p-2 {
   padding: 0.5rem;
+}
+.p-3 {
+  padding: 0.75rem;
+}
+.p-4 {
+  padding: 1rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -744,12 +826,26 @@ video {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
 .font-bold {
   font-weight: 700;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.text-inherit {
+  color: inherit;
 }
 .text-white {
   --tw-text-opacity: 1;
@@ -795,38 +891,6 @@ video {
   --pastelpinkhighlight: #ff2eff;
   --tmrorange: #fadb00;
   --tmrpastel: #fff8c7;
-}
-
-.bg-red {
-  background-color: var(--pastelred) !important;
-}
-
-.bg-orange {
-  background-color: var(--pastelorange) !important;
-}
-
-.bg-yellow {
-  background-color: var(--pastelyellow) !important;
-}
-
-.bg-green {
-  background-color: var(--pastelgreen) !important;
-}
-
-.bg-blue {
-  background-color: var(--pastelblue) !important;
-}
-
-.bg-indigo {
-  background-color: var(--pastelindigo) !important;
-}
-
-.bg-purple {
-  background-color: var(--pastelpurple) !important;
-}
-
-.bg-pink {
-  background-color: var(--pastelpink) !important;
 }
 
 body {
@@ -1168,11 +1232,41 @@ a {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .hover\:opacity-100:hover {
   opacity: 1;
 }
 
+@media (min-width: 640px) {
+
+  .sm\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
 @media (min-width: 768px) {
+
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .md\:ml-4 {
+    margin-left: 1rem;
+  }
+
+  .md\:mr-4 {
+    margin-right: 1rem;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1181,12 +1275,32 @@ a {
 
 @media (min-width: 1024px) {
 
+  .lg\:mx-8 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .lg\:flex-row {
     flex-direction: row;
+  }
+}
+
+.\[\&\>\*\:not\(\:first-child\)\]\:hidden>*:not(:first-child) {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+
+  .lg\:\[\&\>\*\:not\(\:first-child\)\]\:flex>*:not(:first-child) {
+    display: flex;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,10 +1,143 @@
-<p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="https://jekyllrb.com/">jekyllrb.com</a></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jura&display=swap" rel="stylesheet">
+<title>The Making Rooms</title>
+</head>
 
-<p>You can find the source code for Minima at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/minima">minima</a></p>
+<body class="flex flex-col h-full min-h-screen ">
+    <div id="navbar-responsive" class="flex flex-row fixed top-12 z-50 bg-tmrorange border-black border-2 justify-between items-center px-4 h-16 w-full transition-all ease-in-out">
+  <img id="header-image" class="h-28 transition-all ease-in-out" src="/assets/img/making-rooms-logo.png" alt="The Making rooms Logo">
+  
+  <ul id="navul" class="flex flex-col [&>*:not(:first-child)]:hidden lg:flex-row text-xl font-bold lg:[&>*:not(:first-child)]:flex">
+    <li>
+    <a href="javascript:void(0);" class="icon display-mobile " onclick="responsiveNavbar()">
+    <i class="">Menu</i>
+    </a>
+    </li>
+    <li class="mx-4 my-2 md:mx-0"><a class="box-shadow-hover" href="/">Home</a></li>
+    
+    <li class="mx-4 my-2 md:mx-0"><a class="box-shadow-hover" href="/entrepreneurs-makers/">Entrepreneurs and Makers</a></li>
+    <li class="mx-4 my-2 md:mx-0"><a class="box-shadow-hover" href="/services">Services</a></li>
+    <li class="mx-4 my-2 md:mx-0"><a class="box-shadow-hover" href="/about">About</a></li>
+    
+    <!--
+      <li class="mx-4 my-2 md:mx-0"><a class="box-shadow-hover" href="/labs">Labs</a></li>
+      <li><a class="box-shadow-hover" href="#">News</a></li>
+    <li><a class="box-shadow-hover" href="#">Events</a></li>
+    <li><a class="box-shadow-hover" href="#">Projects</a></li>
+    
+    <li><a class="box-shadow-hover" href="#">Residents</a></li>
+    
+    w-screen h-screen
+    
+    -->
+    
+  </ul>
+</div>
 
-<p>You can find the source code for Jekyll at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/jekyll">jekyll</a></p>
+    <div class="h-72 mb-4 w-full relative top-0 border-b-4 border-black">
+    <div class="flex justify-start  h-full absolute z-10">
+        <div class="mt-40 ml-4 p-3 box-shadow">
+            <h1 class="text-4xl font-bold">About The Making Rooms</h1>
+        </div>
+    </div>
+    <img class="h-full w-full object-cover" src="http://localhost:4000/assets/img/TMR.jpeg" alt="hero image">
+</div>
 
+
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 grow mx-8 my-12 transition-all">
+        <div class="col-span-2 lg:mx-8 text-lg">
+            <div id="breadcrumbs">
+    
+    <a href="/">Home</a>
+    
+      
+        / About The Making Rooms
+      
+    
+    </div>
+            <br>
+            <p class="text-2xl">
+    The Making Rooms is a place where creativity, technology and advanced manufacturing come together in a community facility for use by artists, inventors, students, children and just about everyone else to design and make anything from high-tech products and gadgets to toys, artworks, home decorations and accessibility devices.
+</p>
+<br>
+<p class="text-2xl">
+At the heart of The Making Rooms is a Fab Lab containing an impressive range of modern fabrication equipment combining advanced manufacturing with traditional craft processes including 3D printing, laser cutting, electronics, CNC machining, pottery, sculpture and screen printing, to name but a few.
+<br>
+<img class="object-cover h-72 w-full my-4 border-4 border-black" src="/assets/img/tmr_lab.jpg" alt="The making rooms lab">
+The facility can be used for personal fabrication and hobbies, commercial prototyping and artwork, testing new processes & equipment, technical and creative training, education, or just plain fun!
+<br><br>
+The Making Rooms is an independent Community Interest Company (CiC) which aims to: <br><br>
+</p>
+
+<ul class="text-2xl list-disc">
+    <li>Help create more jobs in the creative and manufacturing sectors by enabling and supporting new business creation</li>
+    <li>Improve employability by giving people future creative and technical skills</li>
+    <li>Increase participation in Science, Engineering, Technology, Mathematics and The Arts</li>
+    <li>Improve the well-being of Lancashire residents by providing fun, interesting and self-development activities and enabling people to design and make their own products</li>    
+</ul>
+
+
+        </div>
+
+        <div>
+            <div class="box-shadow p-2 mb-4">
+                <h1 class="text-3xl">Related Links</h1>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="footer w-full">
+    <div class="footer-section">
+      <p>The Making Rooms</p>
+      <p>1 Exchange Street</p>
+      <p>Blackburn</p>
+      <p>BB1 7JN</p>
+    </div>
+    
+    <div  class="footer-section">
+      <p>info@makingrooms.org</p>
+      <p>Tel: 01254 460150</p>
+      <p>(c) 2023. The Making Rooms. </p>
+      <p>Design by uzair.</p>
+    </div>
+    
+    <div  class="footer-section">
+      <ul class="footer-nav">
+      <li><a class="box-shadow-hover" href="/">Home</a></li>
+      <!--
+      <li><a class="box-shadow-hover" href="#">News</a></li>
+      <li><a class="box-shadow-hover" href="#">Events</a></li>
+      <li><a class="box-shadow-hover" href="#">Projects</a></li>
+      -->
+    </ul>
+    </div>
+    
+    
+      <div  class="footer-section">
+        
+      <ul class="footer-nav">
+        <li><a class="box-shadow-hover" href="/about">About</a></li>
+        <!--
+      <li><a class="box-shadow-hover" href="#">Labs</a></li>
+      <li><a class="box-shadow-hover" href="#">Studios</a></li>
+      <li><a class="box-shadow-hover" href="#">Commercial</a></li>
+      
+      -->
+    </ul>
+    </div>
+    
+        
+    
+  </div>
+</body>
+
+<script src="/assets/js/responsive.js"></script>
+</html>
