@@ -587,6 +587,9 @@ video {
 .flex {
   display: flex;
 }
+.table {
+  display: table;
+}
 .grid {
   display: grid;
 }
@@ -604,6 +607,9 @@ video {
 }
 .h-28 {
   height: 7rem;
+}
+.h-44 {
+  height: 11rem;
 }
 .h-64 {
   height: 16rem;
@@ -626,6 +632,10 @@ video {
 .max-h-\[80\%\] {
   max-height: 80%;
 }
+.min-h-fit {
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -644,6 +654,9 @@ video {
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.list-inside {
+  list-style-position: inside;
+}
 .list-disc {
   list-style-type: disc;
 }
@@ -652,6 +665,9 @@ video {
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 .flex-row {
   flex-direction: row;
@@ -679,6 +695,11 @@ video {
 }
 .gap-8 {
   gap: 2rem;
+}
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 .border-2 {
   border-width: 2px;
@@ -784,6 +805,9 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-cover {
+  background-size: cover;
+}
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -872,6 +896,18 @@ video {
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.box-shadow, .box-shadow-hover:hover {
+  --shadow-offset: 0.35rem;
+  --shadow-border: 0.1rem;
+  background-color: black;
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  box-shadow: var(--shadow-offset) var(--shadow-offset) #FADB00, calc(var(--shadow-offset) - var(--shadow-border)) calc(var(--shadow-offset) - var(--shadow-border)) black, calc(var(--shadow-offset) - var(--shadow-border)) calc(var(--shadow-offset) + var(--shadow-border)) black, calc(var(--shadow-offset) + var(--shadow-border)) calc(var(--shadow-offset) - var(--shadow-border)) black, calc(var(--shadow-offset) + var(--shadow-border)) calc(var(--shadow-offset) + var(--shadow-border)) black;
+}
+
 :root {
   --pastelred: #ffadad;
   --pastelredhighlight: #ff1414;
@@ -1003,25 +1039,25 @@ h1 {
 }
 
 /*
-  .navbar{
-    position: absolute;
-    z-index: 999;
-    font-family: 'Jura', sans-serif;
-    font-weight: bold;
-    font-size: 1.5rem;
-    box-sizing: border-box;
-    height: 6rem;
-    width: 100%;
-    margin: 2rem 0 2rem 0;
-    border-top: 0.2rem solid black;
-    border-bottom: 0.2rem solid black;
-    background-color: #FADB00;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2rem 0 2rem; 
-  }
-    /*transition: 0.2s;
+.navbar{
+  position: absolute;
+  z-index: 999;
+  font-family: 'Jura', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  height: 6rem;
+  width: 100%;
+  margin: 2rem 0 2rem 0;
+  border-top: 0.2rem solid black;
+  border-bottom: 0.2rem solid black;
+  background-color: #FADB00;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem 0 2rem; 
+}
+  /*transition: 0.2s;
 */
 a {
   text-decoration: none;
@@ -1200,27 +1236,6 @@ a {
   width: 65%;
 }
 
-.agenda {
-  width: 35%;
-  padding-left: 0;
-}
-
-.agenda-list {
-  display: flex;
-  flex-direction: column;
-  margin-top: 2rem;
-}
-
-.agenda-date-mid {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.agenda-item-date p {
-  padding: 0;
-  margin: 0;
-}
-
 .shape-1 {
   position: absolute;
   bottom: -4rem;
@@ -1264,12 +1279,28 @@ a {
     margin-right: 1rem;
   }
 
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:border-b-0 {
+    border-bottom-width: 0px;
+  }
+
+  .md\:border-r-4 {
+    border-right-width: 4px;
   }
 }
 
@@ -1286,6 +1317,10 @@ a {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
